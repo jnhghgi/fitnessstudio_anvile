@@ -1,0 +1,8 @@
+components:
+- event_bindings: {}
+  layout_properties: {column: TGEKEP}
+  name: button_1
+  properties: {align: left, text: Anmeldung}
+  type: Button
+container: {type: DataRowPanel}
+is_package: true

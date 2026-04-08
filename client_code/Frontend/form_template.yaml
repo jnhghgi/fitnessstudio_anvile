@@ -1,0 +1,32 @@
+components:
+- components:
+  - components:
+    - name: Kurse_Repeating_Panel
+      properties: {item_template: Frontend.RowTemplate1}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'PAVERF,AYLWYO'}
+    name: Kurse_Data_Grid
+    properties:
+      columns:
+      - {data_key: bezeichnung, expand: false, id: JKSDUP, title: Kurs, width: 148.79998779296875}
+      - {data_key: termin, expand: false, id: OJLQEN, title: Termin, width: 89.79998779296875}
+      - {data_key: name, expand: false, id: AODCLI, title: Trainer, width: 117.5999755859375}
+      - {data_key: teilnehmer, expand: false, id: QDYCRN, title: Teilnehmer, width: 126.4000244140625}
+      - {data_key: column_1, id: TGEKEP, title: Anmeldung}
+    type: DataGrid
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: text_box_1
+  properties: {text: Jnhghgi's Fitnessstudio}
+  type: TextBox
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

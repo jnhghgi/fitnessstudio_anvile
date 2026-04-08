@@ -1,0 +1,7 @@
+components:
+- layout_properties: {column: VJQQOR}
+  name: Anmelden
+  properties: {text: Anmelden}
+  type: Button
+container: {type: DataRowPanel}
+is_package: true
