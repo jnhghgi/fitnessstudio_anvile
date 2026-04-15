@@ -13,16 +13,16 @@ def get_buchungs_liste():
   cursor = conn.cursor()
 
   query = '''
-SELECT 
+    SELECT 
     k.bezeichnung AS bezeichnung, 
     k.termin AS termin,
     t.name AS name,
     k.maxTeilnehmer AS maxTeilnehmer,
     COUNT(b.mitgliedID) AS aktuelleTeilnehmer
-FROM kurse k
-JOIN Trainer t ON k.trainerID = t.trainerID
-LEFT JOIN Bucht b ON k.kursID = b.kursID
-GROUP BY k.kursID
+    FROM kurse k
+    JOIN Trainer t ON k.trainerID = t.trainerID
+    LEFT JOIN Bucht b ON k.kursID = b.kursID
+    GROUP BY k.kursID
     '''
   cursor.execute(query)
   rows = cursor.fetchall()
